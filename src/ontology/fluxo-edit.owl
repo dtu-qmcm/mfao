@@ -316,6 +316,11 @@ Declaration(Class(obo:FLUXO_0000280))
 Declaration(Class(obo:FLUXO_0000281))
 Declaration(Class(obo:FLUXO_0000282))
 Declaration(Class(obo:FLUXO_0000283))
+Declaration(Class(obo:FLUXO_0000287))
+Declaration(Class(obo:FLUXO_0000288))
+Declaration(Class(obo:FLUXO_0000289))
+Declaration(Class(obo:FLUXO_0000290))
+Declaration(Class(obo:FLUXO_0000291))
 Declaration(Class(obo:IAO_0000009))
 Declaration(Class(obo:IAO_0000010))
 Declaration(Class(obo:IAO_0000027))
@@ -948,7 +953,7 @@ SubClassOf(obo:FLUXO_0000081 obo:FLUXO_0000079)
 
 # Class: obo:FLUXO_0000082 (fluxomics software parameter)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000082 "A fluxomics parameter that are required to execute fluxomics software for a fluxomics investigation.")
+AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000082 "A fluxomics parameter that is required to execute fluxomics software for a fluxomics investigation.")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000082 "fluxomics software parameter")
 SubClassOf(obo:FLUXO_0000082 obo:FLUXO_0000210)
 
@@ -2424,6 +2429,40 @@ SubClassOf(obo:FLUXO_0000282 obo:IAO_0000098)
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000283 "A isotopologue distribution that is calculated directly from the mass spectrometry measurement.")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000283 "uncorrected isotopologue distribution")
 SubClassOf(obo:FLUXO_0000283 obo:FLUXO_0000143)
+
+# Class: obo:FLUXO_0000287 (replicate)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000287 "A role played by a biological sample in the context of an experiment where the intent is that biological or technical variation is measured.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:FLUXO_0000287 "EFO:0000683")
+AnnotationAssertion(rdfs:label obo:FLUXO_0000287 "replicate")
+SubClassOf(obo:FLUXO_0000287 obo:BFO_0000023)
+
+# Class: obo:FLUXO_0000288 (checksum)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000288 "A data file attribute that is calculated on a data file by using a hash function for error detection or indexing.")
+AnnotationAssertion(rdfs:label obo:FLUXO_0000288 "checksum")
+SubClassOf(obo:FLUXO_0000288 obo:FLUXO_0000228)
+
+# Class: obo:FLUXO_0000289 (data file quality)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000289 "A quality that describes the usage of a data file, including, but not limited to management, handling, or manipulation.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:FLUXO_0000289 "http://purl.obolibrary.org/obo/CRO_0000015")
+AnnotationAssertion(rdfs:label obo:FLUXO_0000289 "data file quality")
+SubClassOf(obo:FLUXO_0000289 obo:BFO_0000019)
+
+# Class: obo:FLUXO_0000290 (raw data file quality)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000290 "The data file quality that describes the original information, collected from the primary source.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:FLUXO_0000290 "http://purl.obolibrary.org/obo/NCIT_C142663")
+AnnotationAssertion(rdfs:label obo:FLUXO_0000290 "raw data file quality")
+SubClassOf(obo:FLUXO_0000290 obo:FLUXO_0000289)
+
+# Class: obo:FLUXO_0000291 (processed data file quality)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000291 "A data file quality that describes the data file derived from other data.")
+AnnotationAssertion(oboInOwl:hasDbXref obo:FLUXO_0000291 "http://purl.obolibrary.org/obo/NCIT_C84340")
+AnnotationAssertion(rdfs:label obo:FLUXO_0000291 "processed data file quality")
+SubClassOf(obo:FLUXO_0000291 obo:FLUXO_0000289)
 
 
 )
