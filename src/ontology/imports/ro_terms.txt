@@ -1,3 +1,7 @@
+http://purl.obolibrary.org/obo/RO_0000081
 http://purl.obolibrary.org/obo/RO_0017001
 http://purl.obolibrary.org/obo/RO_0017502
 http://purl.obolibrary.org/obo/RO_0003301
+http://purl.obolibrary.org/obo/RO_0017002
+http://purl.obolibrary.org/obo/RO_0017010
+http://purl.obolibrary.org/obo/RO_0002234

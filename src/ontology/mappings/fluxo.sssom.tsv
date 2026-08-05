@@ -15,11 +15,13 @@
 #  PREFER: "http://purl.obolibrary.org/obo/PREFER_"
 #  SIO: "http://semanticscience.org/resource/SIO_"
 #  NMR: "http://nmrML.org/nmrCV#NMR:"
+#  EFO: "http://www.ebi.ac.uk/efo/EFO_"
+#  GO: "http://purl.obolibrary.org/obo/GO_"
 #  foaf: "http://xmlns.com/foaf/0.1/"
 #  skos: "http://www.w3.org/2004/02/skos/core#"
 #  semapv: "https://w3id.org/semapv/vocab/"
 #mapping_set_id: https://w3id.org/fluxo/mappings/fluxo
-#mapping_set_version: 2026-04-10
+#mapping_set_version: 2026-07-01
 #mapping_set_description: Cross-ontology mappings for the Metabolic Flux Analysis Ontology (FLUXO) to external ontologies and vocabularies.
 #license: https://creativecommons.org/licenses/by/4.0/
 #subject_type: owl class
@@ -61,7 +63,7 @@ FLUXO:0000206	flux bound	skos:exactMatch	SBO:0000625	flux bound	semapv:LexicalMa
 FLUXO:0000207	statistic	skos:exactMatch	STATO:0000039	statistic	semapv:LexicalMatching
 FLUXO:0000208	standard deviation	skos:exactMatch	STATO:0000237	Standard deviation	semapv:LexicalMatching
 FLUXO:0000209	confidence interval	skos:exactMatch	STATO:0000196	Confidence interval	semapv:LexicalMatching
-FLUXO:0000211	statistical test hypothesis	skos:closeMatch	OBI:0000673	statistical hypothesis test	semapv:ManualMappingCuration
+FLUXO:0000211	statistical hypothesis test	skos:exactMatch	OBI:0000673	statistical hypothesis test	semapv:LexicalMatching
 FLUXO:0000212	goodness of fit statistical test	skos:exactMatch	STATO:0000191	goodness of fit statistical test	semapv:LexicalMatching
 FLUXO:0000213	chi-square test	skos:closeMatch	OBI:0200200	chi square test	semapv:ManualMappingCuration
 FLUXO:0000214	model parameter estimation	skos:exactMatch	STATO:0000119	model parameter estimation	semapv:LexicalMatching
@@ -79,15 +81,15 @@ FLUXO:0000226	representation	skos:exactMatch	SIO:000612	representation	semapv:Le
 FLUXO:0000227	data file	skos:exactMatch	NMR:1400267	data file	semapv:LexicalMatching
 FLUXO:0000228	data file attribute	skos:exactMatch	NMR:1000011	data file attribute	semapv:LexicalMatching
 FLUXO:0000229	data file format	skos:exactMatch	NMR:1001459	data file format	semapv:LexicalMatching
-FLUXO:0000230	CSV	skos:exactMatch	EDAM:format_3752	CSV	semapv:LexicalMatching
-FLUXO:0000231	MAT	skos:exactMatch	EDAM:format_3626	MAT	semapv:LexicalMatching
-FLUXO:0000232	TSV	skos:exactMatch	EDAM:format_3475	TSV	semapv:LexicalMatching
-FLUXO:0000233	xlsx	skos:exactMatch	EDAM:format_3620	xlsx	semapv:LexicalMatching
-FLUXO:0000234	JSON	skos:exactMatch	EDAM:format_3464	JSON	semapv:LexicalMatching
-FLUXO:0000235	SBML	skos:exactMatch	EDAM:format_2585	SBML	semapv:LexicalMatching
+FLUXO:0000230	CSV format	skos:exactMatch	EDAM:format_3752	CSV	semapv:LexicalMatching
+FLUXO:0000231	MAT format	skos:exactMatch	EDAM:format_3626	MAT	semapv:LexicalMatching
+FLUXO:0000232	TSV format	skos:exactMatch	EDAM:format_3475	TSV	semapv:LexicalMatching
+FLUXO:0000233	xlsx format	skos:exactMatch	EDAM:format_3620	xlsx	semapv:LexicalMatching
+FLUXO:0000234	JSON format	skos:exactMatch	EDAM:format_3464	JSON	semapv:LexicalMatching
+FLUXO:0000235	SBML format	skos:exactMatch	EDAM:format_2585	SBML	semapv:LexicalMatching
 FLUXO:0000238	compound identifier	skos:exactMatch	EDAM:data_1086	Compound identifier	semapv:LexicalMatching
-FLUXO:0000239	InChI	skos:exactMatch	EDAM:format_1197	InChI	semapv:LexicalMatching
-FLUXO:0000240	SMILES	skos:exactMatch	EDAM:format_1196	SMILES	semapv:LexicalMatching
+FLUXO:0000239	InChI identifier	skos:exactMatch	EDAM:format_1197	InChI	semapv:LexicalMatching
+FLUXO:0000240	SMILES identifier	skos:exactMatch	EDAM:format_1196	SMILES	semapv:LexicalMatching
 FLUXO:0000242	software attribute	skos:exactMatch	NMR:1000353	software attribute	semapv:LexicalMatching
 FLUXO:0000243	version number	skos:exactMatch	IAO:0000129	version number	semapv:LexicalMatching
 FLUXO:0000250	iso2flux	skos:exactMatch	MSIO:0000048	iso2flux	semapv:LexicalMatching
@@ -99,3 +101,7 @@ FLUXO:0000255	person name	skos:exactMatch	EDAM:data_1692	Person name	semapv:Lexi
 FLUXO:0000256	ORCID Identifier	skos:exactMatch	EDAM:data_4022	ORCID Identifier	semapv:LexicalMatching
 FLUXO:0000257	Email address	skos:exactMatch	EDAM:data_1691	Email address	semapv:LexicalMatching
 FLUXO:0000258	organization	skos:exactMatch	OBI:0000245	organization	semapv:LexicalMatching
+FLUXO:0000292	technical replicate	skos:exactMatch	EFO:0002090	technical replicate	semapv:LexicalMatching
+FLUXO:0000293	biological replicate	skos:exactMatch	EFO:0002091	biological replicate	semapv:LexicalMatching
+FLUXO:0000298	measurement device	skos:exactMatch	OBI:0000832	measurement device	semapv:LexicalMatching
+FLUXO:0000299	metabolic pathway	skos:broadMatch	GO:0008152	metabolic process	semapv:ManualMappingCuration
