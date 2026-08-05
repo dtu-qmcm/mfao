@@ -431,6 +431,7 @@ SubClassOf(obo:FLUXO_0000001 obo:IAO_0000030)
 # Class: obo:FLUXO_0000002 (fluxomics data)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000002 "An information content entity that contains files to determine the rates of metabolic reactions.")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000002 "Could be moved to role")
 AnnotationAssertion(rdfs:comment obo:FLUXO_0000002 "It generally includes the model of metabolic networks and experimental data.")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000002 "fluxomics data")
 SubClassOf(obo:FLUXO_0000002 obo:IAO_0000030)
@@ -861,6 +862,7 @@ SubClassOf(obo:FLUXO_0000057 ObjectSomeValuesFrom(obo:RO_0002333 obo:FLUXO_00001
 # Class: obo:FLUXO_0000058 (compartment)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000058 "A three-dimensional spatial region that is a physically or functionally distinct space (e.g., Cytosol, Mitochondria, Metabolon).")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000058 "Maybe change name to biological compartment or cellular compartment")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000058 "compartment")
 SubClassOf(obo:FLUXO_0000058 obo:BFO_0000028)
 
@@ -950,6 +952,7 @@ SubClassOf(obo:FLUXO_0000070 ObjectSomeValuesFrom(obo:FLUXO_0000301 obo:FLUXO_00
 # Class: obo:FLUXO_0000071 (atom transition network)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000071 "An object aggregate that is made of atom transitions for all reactions making up a metabolic network model.")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000071 "Not a material entity. Systems biology representation")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000071 "atom transition network")
 SubClassOf(obo:FLUXO_0000071 obo:BFO_0000027)
 SubClassOf(obo:FLUXO_0000071 ObjectSomeValuesFrom(obo:BFO_0000051 obo:FLUXO_0000155))
@@ -1012,6 +1015,7 @@ SubClassOf(obo:FLUXO_0000079 ObjectSomeValuesFrom(obo:RO_0000080 obo:FLUXO_00001
 
 AnnotationAssertion(obo:IAO_0000112 obo:FLUXO_0000080 "e.g. The chemical purity of 1,2-13C-Glucose is 99% meaning the glucose is 99% out of all label input.")
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000080 "An isotopic tracer property that is the chemical purity specified in the label input.")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000080 "Could be changed to \"Chemical purity\" and moved up")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FLUXO_0000080 "chemical purity")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000080 "tracer chemical purity")
 SubClassOf(obo:FLUXO_0000080 obo:FLUXO_0000079)
@@ -1022,6 +1026,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000081 "An isotopic tracer proper
 AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000081 "All: Isotopic tracer property that defines the price of the isotopic tracer molecular entity.
 
 BUT is this the object property? When to use it?")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000081 "Could be changed to \"Cost\" and make it general")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000081 "tracer cost")
 SubClassOf(obo:FLUXO_0000081 obo:FLUXO_0000079)
 
@@ -1395,6 +1400,7 @@ SubClassOf(obo:FLUXO_0000132 obo:FLUXO_0000079)
 # Class: obo:FLUXO_0000133 (mass number)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000133 "A data entity that describes the total number of heavy particles (protons and neutrons jointly called nucleons) in the atomic nucleus.")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000133 "Duplicate of monoisotopic molecular mass. Maybe make it broad synonym?")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FLUXO_0000133 "nucleon number")
 AnnotationAssertion(rdfs:comment obo:FLUXO_0000133 "Symbol m in mass spectrometry.")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000133 "mass number")
@@ -2405,6 +2411,7 @@ SubClassOf(obo:FLUXO_0000261 obo:FLUXO_0000229)
 # Class: obo:FLUXO_0000262 (lower confidence limit)
 
 AnnotationAssertion(obo:IAO_0000112 obo:FLUXO_0000262 "a confidence interval which gives a lowest value bounding a confidence interval.")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000262 "This is not a class of confidence interval. It's a statistic about the confidence interval, so it should be moved up to be a subclass of \"statistic\"")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FLUXO_0000262 "http://purl.obolibrary.org/obo/STATO_0000315")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000262 "lower confidence limit")
 SubClassOf(obo:FLUXO_0000262 obo:FLUXO_0000209)
@@ -2412,6 +2419,7 @@ SubClassOf(obo:FLUXO_0000262 obo:FLUXO_0000209)
 # Class: obo:FLUXO_0000263 (upper confidence limit)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000263 "a confidence interval which gives a largest value bounding a confidence interval.")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000263 "This is not a class of confidence interval. It's a statistic about the confidence interval, so it should be moved up to be a subclass of \"statistic\"")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FLUXO_0000263 "http://purl.obolibrary.org/obo/STATO_0000314")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000263 "upper confidence limit")
 SubClassOf(obo:FLUXO_0000263 obo:FLUXO_0000209)
@@ -2449,6 +2457,7 @@ SubClassOf(obo:FLUXO_0000268 obo:FLUXO_0000141)
 # Class: obo:FLUXO_0000269 (mass)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FLUXO_0000269 "A measurement datum that quantifies some amount of matter.")
+AnnotationAssertion(obo:IAO_0000116 obo:FLUXO_0000269 "Change to molecular mass")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FLUXO_0000269 "https://w3id.org/chemrof/mass")
 AnnotationAssertion(rdfs:label obo:FLUXO_0000269 "mass")
 SubClassOf(obo:FLUXO_0000269 obo:IAO_0000109)
