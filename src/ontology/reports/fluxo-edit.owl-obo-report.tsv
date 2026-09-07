@@ -1,10 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	BFO:0000051	rdfs:label	
-ERROR	missing_label	GO:0008150	rdfs:label	
-ERROR	missing_label	IAO:0000010	rdfs:label	
-ERROR	missing_label	RO:0002615	rdfs:label	
-ERROR	missing_label	RO:0017002	rdfs:label	
-ERROR	missing_label	RO:0017010	rdfs:label	
 WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
@@ -59,11 +53,11 @@ WARN	annotation_whitespace	zero-dimensional continuant fiat boundary	has associa
 WARN	annotation_whitespace	zero-dimensional temporal region	has associated axiom(fol)	(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 
 WARN	duplicate_label_synonym	metabolic flux analysis	oboInOwl:hasExactSynonym	metabolic flux analysis
 WARN	duplicate_label_synonym	fluxomics	oboInOwl:hasExactSynonym	fluxomics
-WARN	equivalent_class_axiom_no_genus	FML format	RO:0017010	FluxML specification
-WARN	equivalent_class_axiom_no_genus	FluxML specification	RO:0017002	FML format
-WARN	equivalent_class_axiom_no_genus	SBML format	RO:0017010	SBML specification
-WARN	equivalent_class_axiom_no_genus	SBML specification	RO:0017002	SBML format
-WARN	missing_definition	BFO:0000051	definition	
+WARN	equivalent_class_axiom_no_genus	FML format	specified by information	FluxML specification
+WARN	equivalent_class_axiom_no_genus	FluxML specification	information specifies	FML format
+WARN	equivalent_class_axiom_no_genus	SBML format	specified by information	SBML specification
+WARN	equivalent_class_axiom_no_genus	SBML specification	information specifies	SBML format
+WARN	missing_definition	has part	definition	
 WARN	missing_definition	immaterial entity	definition	
 WARN	missing_definition	lower confidence limit	definition	
 WARN	missing_definition	has specified data input	definition	
@@ -72,8 +66,8 @@ WARN	missing_definition	is specified data input of	definition
 WARN	missing_definition	is specified data output of	definition	
 WARN	missing_definition	has measurement unit	definition	
 WARN	missing_definition	is model of	definition	
-WARN	missing_definition	GO:0008150	definition	
-WARN	missing_definition	IAO:0000010	definition	
+WARN	missing_definition	biological process	definition	
+WARN	missing_definition	software	definition	
 WARN	missing_definition	editor preferred term	definition	
 WARN	missing_definition	example of usage	definition	
 WARN	missing_definition	definition	definition	
@@ -87,9 +81,9 @@ WARN	missing_definition	elucidation	definition
 WARN	missing_definition	has associated axiom(nl)	definition	
 WARN	missing_definition	has associated axiom(fol)	definition	
 WARN	missing_definition	has axiom label	definition	
-WARN	missing_definition	RO:0002615	definition	
-WARN	missing_definition	RO:0017002	definition	
-WARN	missing_definition	RO:0017010	definition	
+WARN	missing_definition	has model	definition	
+WARN	missing_definition	information specifies	definition	
+WARN	missing_definition	specified by information	definition	
 INFO	lowercase_definition	independent continuant	definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 INFO	lowercase_definition	process	definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
 INFO	lowercase_definition	disposition	elucidation	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en
